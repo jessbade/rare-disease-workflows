@@ -1,14 +1,14 @@
 synapse_config:
   class: File
-  path: "/home/sgosline/.synapseConfig"
+  path: "/synapse/credentials/.synapseConfig"
 indexid: syn18134565
 index-type: gencode
 index-dir: gencode_v29
-idquery: SELECT id,specimenID,readPair from syn11678418 WHERE ( ( "assay" = 'rnaSeq' ) AND ( "fileFormat" = 'fastq'))
+idquery: SELECT id,specimenID,readPair from syn11678418 WHERE ( ( "assay" = 'rnaSeq' ) AND ( "fileFormat" = 'fastq') AND name like 'gerald%') order by specimentID LIMIT 4
 sample_query: SELECT distinct specimenID,individualID,assay,dataType,sex,consortium,study,diagnosis,tumorType,species,fundingAgency,resourceType,nf1Genotype,nf2Genotype,studyName,experimentalCondition,isCellLine,transplantationType FROM syn11678418 WHERE ( ( "assay" = 'rnaSeq' ) AND ( "fileFormat" = 'fastq'))
-parentid: syn21053846
+parentid: syn23573681
 group_by: specimenID
 tableparentid:
-        - syn11638893
+        - syn21984813
 tablename:
-        - WashU Biobank RNA-seq data
+        - MPNST Xenograft RNA-Seq
