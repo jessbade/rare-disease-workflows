@@ -1,6 +1,6 @@
 synapse_config:
   class: File
-  path: "/synapse/credentials/.synapseConfig"
+  path: "../../synapse/credentials/.synapseConfig"
 indexid: syn18134565
 index-type: gencode
 index-dir: gencode_v29
